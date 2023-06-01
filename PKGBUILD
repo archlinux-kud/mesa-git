@@ -188,7 +188,7 @@ fi
 case $MESA_WHICH_LLVM in
     1)
         # aur llvm-minimal-git
-        makedepends+=('llvm-minimal-git')
+        makedepends+=('clang-minimal-git' 'llvm-minimal-git')
         _llvm='llvm-libs-minimal-git'
         if [ "$_lib32" == "true" ]; then
           makedepends+=('lib32-llvm-minimal-git')
